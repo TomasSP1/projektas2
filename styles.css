@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, .index-body {
+    height: 100vh;
+    width: 100%;
+}
+
+.index-body::before {    
+    content: "";
+    background-image: url('./images/pexels-tyler-lastovich-572688.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+}
+
+/* nav baro css kodo pradzia */
+nav {
+    border-bottom: black solid 3px;
+}
+.navbar-brand {
+    font-size: max(2vw);
+    font-size: min(1.6vw);
+    margin-left: 2em;
+    font-family: 'Italiana', serif;
+    font-weight:bold;
+}
+.one {
+    margin-right: 2em;
+    font-size: max(1.5vw);
+    font-family: 'Italiana', serif;
+    font-weight:bold;  
+}
+/* nav baro css kodo pabaiga */
+
+
+/* index puslapio main bloko css kodo pradzia */
+.index-main {
+    height: 90%;
+}
+.home-container {
+    background-color: white;
+    position: relative;
+    height: 65%;
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.img-house {
+    height: 30%;
+    display: block;
+    max-height: 40%;
+}
+.p-house {
+    font-size: 5vw;
+}
+/* index puslapio main bloko css kodo pabaiga */
+
+/* page2 main bloko kodo pradzia */
+.page2-main {
+    margin: auto;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+.page2-main-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 3.5vw;
+}
+
+.page2-img {
+    max-height: 35vh;
+    width: 22vw;
+}
+
+.page2-section {
+    display: flex;
+    width: 40vw;
+    justify-content: center;
+    /* margin: auto; */
+}    
+    
+.page2-p {
+    width: 25vw;
+    padding-left: 20px;
+    align-self: center;
+    font-size: 1.3vw;
+}
+/* page2 main bloko kodo pabaiga */
+
+/* page4 main bloko kodo pradzia */
+
+.page4-main {
+    height: 80%;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.page4-main-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4vw;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.page4-img {
+    height: 35vh;
+    width: 90vw;
+    object-fit: cover;
+}
+
+.page4-p {
+    height: 35vh;
+    width: 40vw;
+    text-align: center;
+    padding-top: 5vh;
+    font-size: 2vw;
+}
+/* page4 main bloko kodo pabaiga */
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+    .navbar-brand {
+        display: none;
+    }
+    .nav-item {
+        display: flex;
+        margin: auto;
+    }
+    .one {
+        font-size: 1.3em;  
+    }
+    .page4-p {
+        width: 90vw;
+        height: 15vh;
+        text-align: center;
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 1150px) {
+    .home-container {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 900px) {
+    .page2-main {
+        margin-top: 5%;
+    }
+    .page2-main-section {
+        flex-direction: column;
+        /* margin-top: 70vh; */
+        
+    }
+    .page2-section {
+        display: flex;
+        width: 90vw;
+        margin: auto;
+        margin-bottom: 5wh;
+        
+    }
+    .page2-img {
+        width: 45vw;
+        min-height: 100%;
+        max-height: 100%;
+    }
+    .page2-p {
+        width: 45vw;
+        padding-left: 20px;
+        align-self: center;
+        font-size: 3vw;
+    }   
+}
